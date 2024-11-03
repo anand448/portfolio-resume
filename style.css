@@ -1,28 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 20px;
   color: #333;
   background-color: #f4f4f4;
-}
-
-header {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-h1 {
-  font-size: 2em;
   margin: 0;
 }
 
-section {
-  margin: 20px 0;
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-footer {
+/* Header Styling */
+.header {
+  background-color: #0073e6;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.header p, .header a {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+.content {
+  padding: 20px;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  color: #0073e6;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-item h3 {
+  font-size: 1.4em;
+  color: #444;
+}
+
+.content-item p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Skills List Styling */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #0073e6;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9em;
   margin-top: 20px;
-  font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .section h2 {
+    font-size: 1.5em;
+  }
+
+  .content-item h3 {
+    font-size: 1.2em;
+  }
 }
